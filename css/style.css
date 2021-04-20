@@ -1,0 +1,235 @@
+/*--------------------------------Brand Visuals----------------------------------------*/
+
+span#brand{
+  color: #097087;
+  text-transform: capitalize;
+}
+
+#logo_mark img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 10%;
+}
+
+/*--------------------------------Mobile General-----------------------------------*/
+
+.container{
+	background-color: white;
+	margin: 0;
+	padding: 0; 
+}
+
+h1{
+  margin: 1em;
+	color: black;
+  font-family: 'rubik', sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2{
+  color: black;
+  font-family: 'rubik', sans-serif;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bolder;
+  margin: 1em;
+}
+
+h3{
+  color: white;
+  font-family: futura;
+  margin: 1em 1em 1em 2em;
+  font-size: 1.2em;
+
+}
+
+p{
+	color: black;
+  font-family: 'rubik', sans-serif;
+  font-size: 25px;
+  margin: 2em 2em 2em 2em;
+  line-height: 1.5em;
+}
+
+
+.icon img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  opacity: 75%;
+}
+
+#logo_mark img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 10%;
+}
+
+button{
+    background-color: #1A96C7; 
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'rubik', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  
+}
+/*----------------------Intro screen-------------------------------------------------*/
+
+#welcome{
+  margin-top: 10em;
+}
+
+/*------------------------Java Script Quiz -------------------------------------------*/
+
+.question{
+  font-weight: bolder;
+} 
+.answers{
+    margin: 3em;
+}
+
+a.back{
+  font-family: 'Rubik', sans-serif;
+  color: #1A96C7; 
+  text-align: center;
+  display: block;
+  margin-top: 1em;
+}
+
+/*------------------------Radio Buttons-----------------------------------------------*/
+
+/* Customize the label (the container) */
+.option {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 30px;
+  font-family: 'rubik', sans-serif;
+  cursor: pointer;
+  font-size: 25px;
+  color: #202020;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.answers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.answers:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.answers input:checked ~ .checkmark {
+  background-color:  #1A96C7;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.answers:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.answers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.answers .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/*---------------------Slider------------------------*/
+
+.slidecontainer {
+  margin: 5em;
+  height: 4em;
+  display: absolute;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #1A96C7;
+  cursor: pointer;
+}
+
+#daily{
+  display: block;
+  text-align: center;
+}

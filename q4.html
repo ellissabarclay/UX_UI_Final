@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width= 479px, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+	<title>ECOHABIT | Quiz</title>
+
+</head>
+<body>
+
+<div class = "container">
+
+	<div id="logo_mark">
+		<a href="home.html"><img src="css/img/logo_mark.png" alt="logo mark"></a>
+    </div>
+
+    <div id="category">
+    <h2>
+    Food
+    </h2>
+    </div>
+
+    <div class = "icon">
+        <img src = "css/img/food.png">
+    </div>
+
+    <div id = "question">
+    <p>
+    How many days a week do you eat red meat?
+    </p>
+    </div>
+    
+        <div class="slidecontainer">
+            <input type="range" min="1" max="7" value="50" class="slider" id="myRange">
+            <p><span id="daily"></span></p>
+        </div>
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("daily");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+}
+        </script>
+
+    <a href = q5.html><button id="next">Next</button></a>
+    <a class = "back" href = q3.html>Go back</a>
+
+</div>
+
+
+
+
+
+</body>
+</html>
